@@ -1,0 +1,41 @@
+# ---------------------------------------------------------------- 构建产物
+/build/
+/build-static/
+/bin/
+dist/
+*.o
+*.obj
+Makefile
+Makefile.Debug
+Makefile.Release
+.qmake.stash
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+debug/
+release/
+
+# ---------------------------------------------------------------- Android
+android/build/
+*.class
+*.dex
+
+# 签名密钥不入库；build_apk.sh 首次运行会自动生成 keystore.jks
+*.jks
+*.keystore
+
+# ---------------------------------------------------------------- Python
+__pycache__/
+*.pyc
+
+# ---------------------------------------------------------------- 工具中间结果
+verify/puzzles.txt
+docs/dev/
+
+# ---------------------------------------------------------------- 编辑器 / 系统
+.vscode/
+.idea/
+*.pro.user
+*.user
+Thumbs.db
+.DS_Store
